@@ -5,10 +5,10 @@ import java.util.Scanner;
 import br.com.fiap.entidades.Mensagem;
 import br.com.fiap.filas.FilaMensagens;
 
-/* Julio Cesar Lopes Batista
- * Lucca de Freitas
- * Gregory Cedraz 
- * Victor Mori
+/* Julio Cesar Lopes Batista  RM:94543
+ * Lucca de Freitas           RM:94267
+ * Gregory Cedraz             RM:94404
+ * Victor Mori                RM:93121
  */
 public class AtendimentoMensagem {
 
@@ -89,7 +89,7 @@ public class AtendimentoMensagem {
 				} else if (!filaSugestao.isEmpty() && tipoContato == 2) {
 					Mensagem msgAtendimento = filaSugestao.dequeue();
 					System.out.println("Mensagem selecionada: " + msgAtendimento.getDescricao());
-					System.out.println("Como deseja receber a resposta?");
+					System.out.println("Como deseja tratar a resposta?");
 					System.out.println("1. Resolucao automatica");
 					System.out.println("2. Encaminhar para o setor analisar");
 					System.out.print("---> Digite a opcao desejada: ");

@@ -2,10 +2,10 @@ package br.com.fiap.filas;
 
 import br.com.fiap.entidades.Mensagem;
 
-/* Julio Cesar Lopes Batista
- * Lucca de Freitas
- * Gregory Cedraz 
- * Victor Mori
+/* Julio Cesar Lopes Batista  RM:94543
+ * Lucca de Freitas           RM:94267
+ * Gregory Cedraz             RM:94404
+ * Victor Mori                RM:93121
  */
 public class FilaMensagens {
 	

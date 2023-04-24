@@ -1,9 +1,9 @@
 package br.com.fiap.entidades;
 
-/* Julio Cesar Lopes Batista
- * Lucca de Freitas
- * Gregory Cedraz 
- * Victor Mori
+/* Julio Cesar Lopes Batista  RM:94543
+ * Lucca de Freitas           RM:94267
+ * Gregory Cedraz             RM:94404
+ * Victor Mori                RM:93121
  */
 
 public class Mensagem {
@@ -12,19 +12,19 @@ public class Mensagem {
 	String descricao;
 
 	// Utilizar essa variavel para atribuir o identificador, no main definir quando
-	// será telefone ou email
+	// serï¿½ telefone ou email
 	String indentificador;
 
-	// (1-reclamação/ 2-sugestão)
+	// (1-reclamaï¿½ï¿½o/ 2-sugestï¿½o)
 	int motivoContato;
 
-	// Usar esse construstor quando não for necessário usar o nome
+	// Usar esse construstor quando nï¿½o for necessï¿½rio usar o nome
 	public Mensagem(String descricao, String indentificador, int motivoContato) {
 		this.descricao = descricao;
 		this.indentificador = indentificador;
 		this.motivoContato = motivoContato;
 	}
-	// Usar esse construstor quando for necessário usar o nome
+	// Usar esse construstor quando for necessï¿½rio usar o nome
 	public Mensagem(String nome, String descricao, String indentificador, int motivoContato) {
 		this.nome = nome;
 		this.descricao = descricao;
@@ -63,12 +63,12 @@ public class Mensagem {
 	public void setMotivoContato(int motivoContato) {
 		this.motivoContato = motivoContato;
 	}
+
 	public String toString() {
-		return getClass().getName() + "@" + Integer.toHexString(hashCode());
-		}
+		return "Mensagem [nome=" + nome + ", descricao=" + descricao + ", indentificador=" + indentificador
+				+ ", motivoContato=" + motivoContato + "]";
+	}
 	
-	/*public String toString() {
-		return "Nome: "+nome+"\nMensagem: "+descricao+"\n Identificador: "+indentificador+" \n Motivo de contato: "+motivoContato;
-		}*/
+	
 	
 }
