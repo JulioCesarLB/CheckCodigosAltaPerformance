@@ -63,5 +63,12 @@ public class Mensagem {
 	public void setMotivoContato(int motivoContato) {
 		this.motivoContato = motivoContato;
 	}
+	public String toString() {
+		return getClass().getName() + "@" + Integer.toHexString(hashCode());
+		}
+	
+	/*public String toString() {
+		return "Nome: "+nome+"\nMensagem: "+descricao+"\n Identificador: "+indentificador+" \n Motivo de contato: "+motivoContato;
+		}*/
 	
 }

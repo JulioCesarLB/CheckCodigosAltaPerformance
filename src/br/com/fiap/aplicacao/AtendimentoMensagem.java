@@ -118,9 +118,13 @@ public class AtendimentoMensagem {
 				} else {
 					System.out.println("Nenhuma Mensagem pendente! ");
 				}
-
+			
 			}
-		} while (opcao != 0); // !filaReclamacao.isEmpty() && !filaResolucao.isEmpty() &&
+			if(opcao==0 && (!filaResolucao.isEmpty() || !filaSugestao.isEmpty() || !filaReclamacao.isEmpty())) {
+				System.out.println("Para finalizar o programa, todas as filas precisam estar vazias");
+				opcao=-1;
+			}
+		} while (opcao != 0 ); // !filaReclamacao.isEmpty() && !filaResolucao.isEmpty() &&
 								// !filaSugestao.isEmpty()
 								// --- > oque eu tentei juliao (talvez seja necessario olhar o metodo)
 		System.out.println("Programa Encerrado!");
